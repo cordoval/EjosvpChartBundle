@@ -16,6 +16,8 @@ usage
 in controller:
 
 ``` php
+<?php
+
 $pie = new Pie('pizza')
 $pie->setRows(array(
     array('Mushrooms', 3),
