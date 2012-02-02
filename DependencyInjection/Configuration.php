@@ -1,6 +1,6 @@
 <?php
 
-namespace Storm\ChartBundle\DependencyInjection;
+namespace Ejosvp\ChartBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

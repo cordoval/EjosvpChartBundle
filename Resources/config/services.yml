@@ -1,9 +1,9 @@
 parameters:
-    storm_chart.twig.extension.class: Storm\ChartBundle\Twig\ChartExtension
+    ejosvp_chart.twig.extension.class: Ejosvp\ChartBundle\Twig\ChartExtension
 
 services:
-    storm_chart.twig.extension:
-        class: %storm_chart.twig.extension.class%
+    ejosvp_chart.twig.extension:
+        class: %ejosvp_chart.twig.extension.class%
         arguments:
             - @service_container
         tags:

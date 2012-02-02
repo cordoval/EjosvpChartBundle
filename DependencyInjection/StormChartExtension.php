@@ -1,6 +1,6 @@
 <?php
 
-namespace Storm\ChartBundle\DependencyInjection;
+namespace Ejosvp\ChartBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
@@ -12,7 +12,7 @@ use Symfony\Component\DependencyInjection\Loader;
  *
  * To learn more see {@link http://symfony.com/doc/current/cookbook/bundles/extension.html}
  */
-class StormChartExtension extends Extension
+class EjosvpChartExtension extends Extension
 {
     /**
      * {@inheritDoc}

@@ -1,6 +1,6 @@
 <?php
 
-namespace Storm\ChartBundle\Chart;
+namespace Ejosvp\ChartBundle\Chart;
 
 abstract class Chart
 {

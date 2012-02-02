@@ -1,10 +1,10 @@
 <?php
 
-namespace Storm\ChartBundle\Twig;
+namespace Ejosvp\ChartBundle\Twig;
 
 use Twig_Extension;
 use Symfony\Component\DependencyInjection\ContainerInterface;
-use Storm\ChartBundle\Chart\ChartViewInterface;
+use Ejosvp\ChartBundle\Chart\ChartViewInterface;
 
 class ChartExtension extends Twig_Extension
 {
@@ -30,12 +30,12 @@ class ChartExtension extends Twig_Extension
 
     public function initChart()
     {
-        return $this->render('StormChartBundle:Chart:init.html.twig');
+        return $this->render('EjosvpChartBundle:Chart:init.html.twig');
     }
 
     public function renderChart(ChartViewInterface $chart)
     {
-        return $this->render('StormChartBundle:Chart:render.html.twig', array(
+        return $this->render('EjosvpChartBundle:Chart:render.html.twig', array(
             'chart' => $chart,
         ));
     }
