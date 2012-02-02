@@ -1,0 +1,17 @@
+{#style="width:{{ chart.options.width }}px; height:{{ options.height }}px"#}
+
+<div id="chart_div_{{ chart.name }}"></div>
+<script type="text/javascript">
+    function drawChart_{{ chart.name }}() {
+        // Create the data table.
+        var data = new google.visualization.DataTable({{ chart.data|json_encode|raw }});
+
+        // Set chart options
+        var options = {{ chart.options|json_encode|raw }};
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.{{ chart.type }}(document.getElementById('chart_div_{{ chart.name }}'));
+        chart.draw(data, options);
+    }
+    google.setOnLoadCallback(drawChart_{{ chart.name }});
+</script>

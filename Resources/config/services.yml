@@ -1,0 +1,10 @@
+parameters:
+    storm_chart.twig.extension.class: Storm\ChartBundle\Twig\ChartExtension
+
+services:
+    storm_chart.twig.extension:
+        class: %storm_chart.twig.extension.class%
+        arguments:
+            - @service_container
+        tags:
+            - {name: twig.extension}
